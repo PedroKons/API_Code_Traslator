@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String
+  points    Int      @default(0)
+  createdAt DateTime @default(now())
+  guesses   Guess[]
+}
+
+model Phrase {
+  id          String   @id @default(uuid())
+  textEN      String
+  explanation String
+  createdAt   DateTime @default(now())
+  guesses     Guess[]
+}
+
+model Guess {
+  id          String   @id @default(uuid())
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String
+  phrase      Phrase   @relation(fields: [phraseId], references: [id])
+  phraseId    String
+  userAnswer  String
+  isCorrect   Boolean
+  gptFeedback String
+  createdAt   DateTime @default(now())
+}

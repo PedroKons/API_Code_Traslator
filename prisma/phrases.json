@@ -1,0 +1,83 @@
+[
+    {
+      "textEN": "A variable is a container for storing data.",
+      "explanation": ""
+    },
+    {
+      "textEN": "A function is a block of code designed to perform a task.",
+      "explanation": ""
+    },
+    {
+      "textEN": "JavaScript is a high-level, interpreted programming language.",
+      "explanation": ""
+    },
+    {
+      "textEN": "An array is a special variable that can hold more than one value at a time.",
+      "explanation": ""
+    },
+    {
+      "textEN": "A loop is used to run the same block of code repeatedly under certain conditions.",
+      "explanation": ""
+    },
+    {
+      "textEN": "An object is a collection of properties, and a property is an association between a name and a value.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The 'if' statement is used to make decisions in code.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The 'for' loop repeats a block of code a known number of times.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The 'while' loop repeats code as long as a condition is true.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The 'return' statement ends function execution and specifies a value to be returned.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The 'const' keyword declares a constant variable that cannot be reassigned.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The 'let' keyword allows you to declare a block-scoped variable.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The '===' operator checks both value and type for equality.",
+      "explanation": ""
+    },
+    {
+      "textEN": "A callback function is a function passed into another function as an argument.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The 'typeof' operator returns the data type of a variable.",
+      "explanation": ""
+    },
+    {
+      "textEN": "A promise is an object representing the eventual completion or failure of an asynchronous operation.",
+      "explanation": ""
+    },
+    {
+      "textEN": "Asynchronous code allows tasks to run in the background without blocking the main thread.",
+      "explanation": ""
+    },
+    {
+      "textEN": "The DOM (Document Object Model) represents the structure of an HTML document.",
+      "explanation": ""
+    },
+    {
+      "textEN": "APIs allow applications to communicate with each other.",
+      "explanation": ""
+    },
+    {
+      "textEN": "Debugging is the process of finding and fixing errors in your code.",
+      "explanation": ""
+    }
+]
+  

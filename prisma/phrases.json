@@ -1,83 +1,428 @@
 [
-    {
-      "textEN": "A variable is a container for storing data.",
-      "explanation": ""
-    },
-    {
-      "textEN": "A function is a block of code designed to perform a task.",
-      "explanation": ""
-    },
-    {
-      "textEN": "JavaScript is a high-level, interpreted programming language.",
-      "explanation": ""
-    },
-    {
-      "textEN": "An array is a special variable that can hold more than one value at a time.",
-      "explanation": ""
-    },
-    {
-      "textEN": "A loop is used to run the same block of code repeatedly under certain conditions.",
-      "explanation": ""
-    },
-    {
-      "textEN": "An object is a collection of properties, and a property is an association between a name and a value.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The 'if' statement is used to make decisions in code.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The 'for' loop repeats a block of code a known number of times.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The 'while' loop repeats code as long as a condition is true.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The 'return' statement ends function execution and specifies a value to be returned.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The 'const' keyword declares a constant variable that cannot be reassigned.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The 'let' keyword allows you to declare a block-scoped variable.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The '===' operator checks both value and type for equality.",
-      "explanation": ""
-    },
-    {
-      "textEN": "A callback function is a function passed into another function as an argument.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The 'typeof' operator returns the data type of a variable.",
-      "explanation": ""
-    },
-    {
-      "textEN": "A promise is an object representing the eventual completion or failure of an asynchronous operation.",
-      "explanation": ""
-    },
-    {
-      "textEN": "Asynchronous code allows tasks to run in the background without blocking the main thread.",
-      "explanation": ""
-    },
-    {
-      "textEN": "The DOM (Document Object Model) represents the structure of an HTML document.",
-      "explanation": ""
-    },
-    {
-      "textEN": "APIs allow applications to communicate with each other.",
-      "explanation": ""
-    },
-    {
-      "textEN": "Debugging is the process of finding and fixing errors in your code.",
-      "explanation": ""
-    }
+  {
+    "textEN": "A compiler translates source code into machine code."
+  },
+  {
+    "textEN": "Variables store data that can be modified during program execution."
+  },
+  {
+    "textEN": "Functions are reusable blocks of code that perform specific tasks."
+  },
+  {
+    "textEN": "Arrays are data structures that store multiple elements of the same type."
+  },
+  {
+    "textEN": "Object-oriented programming uses classes and objects to organize code."
+  },
+  {
+    "textEN": "Loops allow you to execute code repeatedly until a condition is met."
+  },
+  {
+    "textEN": "Conditional statements control the flow of program execution."
+  },
+  {
+    "textEN": "Debugging is the process of finding and fixing errors in code."
+  },
+  {
+    "textEN": "APIs provide interfaces for different software components to communicate."
+  },
+  {
+    "textEN": "Version control systems track changes in source code over time."
+  },
+  {
+    "textEN": "Algorithms are step-by-step procedures for solving computational problems."
+  },
+  {
+    "textEN": "Data types define the kind of data a variable can hold."
+  },
+  {
+    "textEN": "Inheritance allows classes to inherit properties from parent classes."
+  },
+  {
+    "textEN": "Recursion is a technique where functions call themselves."
+  },
+  {
+    "textEN": "Exception handling manages errors that occur during program execution."
+  },
+  {
+    "textEN": "Libraries provide pre-written code that can be imported into programs."
+  },
+  {
+    "textEN": "Syntax refers to the rules that define valid program structure."
+  },
+  {
+    "textEN": "Memory management controls how programs allocate and free memory."
+  },
+  {
+    "textEN": "Concurrency allows multiple processes to run simultaneously."
+  },
+  {
+    "textEN": "Design patterns are reusable solutions to common programming problems."
+  },
+  {
+    "textEN": "Unit testing verifies that individual components work correctly."
+  },
+  {
+    "textEN": "Frameworks provide structure and tools for application development."
+  },
+  {
+    "textEN": "Database queries retrieve and manipulate data from databases."
+  },
+  {
+    "textEN": "Web servers handle HTTP requests and serve web content."
+  },
+  {
+    "textEN": "Package managers automate the installation of software dependencies."
+  },
+  {
+    "textEN": "Code refactoring improves code structure without changing functionality."
+  },
+  {
+    "textEN": "Integrated Development Environments provide tools for coding and debugging."
+  },
+  {
+    "textEN": "Regular expressions are patterns used for string matching and manipulation."
+  },
+  {
+    "textEN": "JSON is a lightweight data interchange format based on JavaScript syntax."
+  },
+  {
+    "textEN": "REST APIs use HTTP methods to perform operations on web resources."
+  },
+  {
+    "textEN": "Git is a distributed version control system for tracking code changes."
+  },
+  {
+    "textEN": "Docker containers package applications with their runtime dependencies."
+  },
+  {
+    "textEN": "Static typing checks variable types at compile time."
+  },
+  {
+    "textEN": "Dynamic typing determines variable types at runtime."
+  },
+  {
+    "textEN": "Garbage collection automatically manages memory deallocation."
+  },
+  {
+    "textEN": "Binary search efficiently finds elements in sorted arrays."
+  },
+  {
+    "textEN": "Hash tables provide fast data retrieval using key-value pairs."
+  },
+  {
+    "textEN": "SQL databases use structured query language for data management."
+  },
+  {
+    "textEN": "NoSQL databases store data in flexible, non-tabular formats."
+  },
+  {
+    "textEN": "Microservices architecture breaks applications into small, independent services."
+  },
+  {
+    "textEN": "Cloud computing provides on-demand access to computing resources."
+  },
+  {
+    "textEN": "Machine learning algorithms learn patterns from data automatically."
+  },
+  {
+    "textEN": "Big O notation describes algorithm efficiency and performance."
+  },
+  {
+    "textEN": "Functional programming treats computation as evaluation of mathematical functions."
+  },
+  {
+    "textEN": "Lambda functions are anonymous functions defined inline."
+  },
+  {
+    "textEN": "Asynchronous programming allows non-blocking code execution."
+  },
+  {
+    "textEN": "Web frameworks simplify the development of web applications."
+  },
+  {
+    "textEN": "Mobile development creates applications for smartphones and tablets."
+  },
+  {
+    "textEN": "DevOps combines software development and IT operations practices."
+  },
+  {
+    "textEN": "Continuous integration automatically builds and tests code changes."
+  },
+  {
+    "textEN": "Code reviews ensure code quality through peer examination."
+  },
+  {
+    "textEN": "Polymorphism allows objects of different types to be treated uniformly."
+  },
+  {
+    "textEN": "Encapsulation hides internal implementation details from external access."
+  },
+  {
+    "textEN": "Abstraction simplifies complex systems by hiding unnecessary details."
+  },
+  {
+    "textEN": "Interfaces define contracts that classes must implement."
+  },
+  {
+    "textEN": "Constructors initialize object instances when they are created."
+  },
+  {
+    "textEN": "Destructors clean up resources when objects are destroyed."
+  },
+  {
+    "textEN": "Pointers store memory addresses of variables or objects."
+  },
+  {
+    "textEN": "Stack memory is automatically managed and follows LIFO principle."
+  },
+  {
+    "textEN": "Heap memory is manually managed and allows dynamic allocation."
+  },
+  {
+    "textEN": "Buffer overflow occurs when data exceeds allocated memory boundaries."
+  },
+  {
+    "textEN": "Race conditions happen when multiple threads access shared resources."
+  },
+  {
+    "textEN": "Deadlocks occur when processes wait indefinitely for each other."
+  },
+  {
+    "textEN": "Thread synchronization coordinates access to shared resources."
+  },
+  {
+    "textEN": "Mutex locks prevent multiple threads from accessing critical sections."
+  },
+  {
+    "textEN": "Semaphores control access to resources with limited availability."
+  },
+  {
+    "textEN": "Load balancers distribute incoming requests across multiple servers."
+  },
+  {
+    "textEN": "Caching stores frequently accessed data for faster retrieval."
+  },
+  {
+    "textEN": "Database indexing improves query performance by organizing data."
+  },
+  {
+    "textEN": "Normalization reduces data redundancy in relational databases."
+  },
+  {
+    "textEN": "ACID properties ensure database transaction reliability and consistency."
+  },
+  {
+    "textEN": "Sharding distributes database data across multiple servers."
+  },
+  {
+    "textEN": "Replication creates copies of data for backup and availability."
+  },
+  {
+    "textEN": "MapReduce processes large datasets across distributed clusters."
+  },
+  {
+    "textEN": "Blockchain technology creates immutable distributed ledgers."
+  },
+  {
+    "textEN": "Encryption secures data by converting it into unreadable format."
+  },
+  {
+    "textEN": "Digital signatures verify authenticity and integrity of data."
+  },
+  {
+    "textEN": "SSL certificates enable secure communication over networks."
+  },
+  {
+    "textEN": "OAuth provides secure authorization for third-party applications."
+  },
+  {
+    "textEN": "JWT tokens contain encoded claims for stateless authentication."
+  },
+  {
+    "textEN": "CORS headers control cross-origin resource sharing in browsers."
+  },
+  {
+    "textEN": "GraphQL allows clients to request specific data fields."
+  },
+  {
+    "textEN": "WebSockets enable real-time bidirectional communication."
+  },
+  {
+    "textEN": "CDN networks deliver content from geographically distributed servers."
+  },
+  {
+    "textEN": "DNS servers translate domain names into IP addresses."
+  },
+  {
+    "textEN": "HTTP status codes indicate the result of client requests."
+  },
+  {
+    "textEN": "Middleware functions process requests between client and server."
+  },
+  {
+    "textEN": "Serialization converts objects into transmittable data formats."
+  },
+  {
+    "textEN": "Deserialization reconstructs objects from transmitted data."
+  },
+  {
+    "textEN": "XML markup language structures data using hierarchical tags."
+  },
+  {
+    "textEN": "YAML format uses indentation to represent data structures."
+  },
+  {
+    "textEN": "Configuration files store application settings and parameters."
+  },
+  {
+    "textEN": "Environment variables provide runtime configuration values."
+  },
+  {
+    "textEN": "Command line interfaces allow text-based program interaction."
+  },
+  {
+    "textEN": "Shell scripts automate system administration tasks."
+  },
+  {
+    "textEN": "Build tools compile and package source code into deployable applications."
+  },
+  {
+    "textEN": "Dependency injection provides objects with their required dependencies."
+  },
+  {
+    "textEN": "Inversion of control delegates object creation to external frameworks."
+  },
+  {
+    "textEN": "Aspect-oriented programming separates cross-cutting concerns."
+  },
+  {
+    "textEN": "Model-View-Controller pattern separates application logic from presentation."
+  },
+  {
+    "textEN": "Observer pattern notifies multiple objects about state changes."
+  },
+  {
+    "textEN": "Factory pattern creates objects without specifying exact classes."
+  },
+  {
+    "textEN": "Singleton pattern ensures only one instance of a class exists."
+  },
+  {
+    "textEN": "Decorator pattern adds new functionality to objects dynamically."
+  },
+  {
+    "textEN": "Adapter pattern allows incompatible interfaces to work together."
+  },
+  {
+    "textEN": "Bridge pattern separates abstraction from implementation."
+  },
+  {
+    "textEN": "Composite pattern composes objects into tree structures."
+  },
+  {
+    "textEN": "Facade pattern provides a simplified interface to a complex system."
+  },
+  {
+    "textEN": "Flyweight pattern reduces memory usage by sharing common data."
+  },
+  {
+    "textEN": "Proxy pattern provides a surrogate object to control access."
+  },
+  {
+    "textEN": "Chain of Responsibility pattern passes requests along a chain of handlers."
+  },
+  {
+    "textEN": "Command pattern encapsulates a request as an object."
+  },
+  {
+    "textEN": "Interpreter pattern defines a grammar for language interpretation."
+  },
+  {
+    "textEN": "Iterator pattern provides sequential access to elements."
+  },
+  {
+    "textEN": "Mediator pattern defines simplified communication between classes."
+  },
+  {
+    "textEN": "Memento pattern captures and restores object state."
+  },
+  {
+    "textEN": "State pattern allows an object to alter its behavior when state changes."
+  },
+  {
+    "textEN": "Strategy pattern defines a family of algorithms and makes them interchangeable."
+  },
+  {
+    "textEN": "Template Method pattern defines the skeleton of an algorithm."
+  },
+  {
+    "textEN": "Visitor pattern separates algorithms from object structures."
+  },
+  {
+    "textEN": "Dependency Inversion principle depends on abstractions, not concretions."
+  },
+  {
+    "textEN": "Interface Segregation principle favors many specific interfaces."
+  },
+  {
+    "textEN": "Liskov Substitution principle ensures derived classes can substitute base classes."
+  },
+  {
+    "textEN": "Open-Closed principle allows extension without modification."
+  },
+  {
+    "textEN": "Single Responsibility principle states each class should have one reason to change."
+  },
+  {
+    "textEN": "Continuous Deployment automatically deploys code to production."
+  },
+  {
+    "textEN": "Infrastructure as Code manages infrastructure through code."
+  },
+  {
+    "textEN": "Blue-Green Deployment reduces downtime during updates."
+  },
+  {
+    "textEN": "Canary Releases gradually roll out changes to users."
+  },
+  {
+    "textEN": "Feature Flags enable or disable features at runtime."
+  },
+  {
+    "textEN": "Circuit Breaker pattern prevents cascading failures."
+  },
+  {
+    "textEN": "Bulkhead pattern isolates system components."
+  },
+  {
+    "textEN": "Retry pattern handles transient failures gracefully."
+  },
+  {
+    "textEN": "Throttling pattern limits request rates."
+  },
+  {
+    "textEN": "Rate Limiting controls request frequency."
+  },
+  {
+    "textEN": "Service Discovery locates service instances."
+  },
+  {
+    "textEN": "API Gateway routes requests to appropriate services."
+  },
+  {
+    "textEN": "Event Sourcing stores all changes as events."
+  },
+  {
+    "textEN": "CQRS separates read and write operations."
+  },
+  {
+    "textEN": "Saga pattern manages distributed transactions."
+  },
+  {
+    "textEN": "Outbox pattern ensures reliable message delivery."
+  },
+  {
+    "textEN": "Inbox pattern handles duplicate messages."
+  }
 ]
-  

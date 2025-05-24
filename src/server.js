@@ -6,6 +6,7 @@ import { PrismaClient } from '@prisma/client'
 import authRoutes from './routes/auth.js'
 import phraseRoutes from './routes/phrase.js'
 import guessRoutes from './routes/guess.js'
+import leaderboardRoutes from './routes/leaderboard.js'
 
 const fastify = Fastify({ logger: true })
 const prisma = new PrismaClient()
@@ -16,7 +17,6 @@ fastify.register(cors, {
   allowedHeaders: ['Authorization', 'Content-Type']
 })
 fastify.register(jwt, { secret: process.env.JWT_SECRET })
-
 fastify.decorate('prisma', prisma)
 fastify.decorate('authenticate', async (req, res) => {
   try {
@@ -29,6 +29,7 @@ fastify.decorate('authenticate', async (req, res) => {
 fastify.register(authRoutes)
 fastify.register(phraseRoutes)
 fastify.register(guessRoutes)
+fastify.register(leaderboardRoutes)
 
 fastify.listen({ port: 3000 }, (err, address) => {
   if (err) throw err

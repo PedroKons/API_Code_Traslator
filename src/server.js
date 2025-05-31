@@ -8,7 +8,10 @@ import phraseRoutes from './routes/phrase.js'
 import guessRoutes from './routes/guess.js'
 import leaderboardRoutes from './routes/leaderboard.js'
 
-const fastify = Fastify({ logger: true })
+const fastify = Fastify({ 
+  logger: true,
+  trustProxy: true
+})
 const prisma = new PrismaClient()
 
 fastify.register(cors, {
@@ -31,7 +34,17 @@ fastify.register(phraseRoutes)
 fastify.register(guessRoutes)
 fastify.register(leaderboardRoutes)
 
-fastify.listen({ port: process.env.PORT || 3000 }, (err, address) => {
-  if (err) throw err
-  console.log(`🚀 Server is running at ${address}`)
-})
+const start = async () => {
+  try {
+    await fastify.listen({ 
+      port: process.env.PORT || 3000,
+      host: '0.0.0.0'  // Importante para produção
+    })
+    console.log(`🚀 Server is running at ${fastify.server.address().port}`)
+  } catch (err) {
+    fastify.log.error(err)
+    process.exit(1)
+  }
+}
+
+start()

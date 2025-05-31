@@ -12,7 +12,7 @@ const fastify = Fastify({ logger: true })
 const prisma = new PrismaClient()
 
 fastify.register(cors, {
-  origin: 'http://localhost:5173',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Authorization', 'Content-Type']
 })
@@ -31,7 +31,7 @@ fastify.register(phraseRoutes)
 fastify.register(guessRoutes)
 fastify.register(leaderboardRoutes)
 
-fastify.listen({ port: 3000 }, (err, address) => {
+fastify.listen({ port: process.env.PORT || 3000 }, (err, address) => {
   if (err) throw err
   console.log(`🚀 Server is running at ${address}`)
 })

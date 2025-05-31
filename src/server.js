@@ -29,6 +29,10 @@ fastify.decorate('authenticate', async (req, res) => {
   }
 })
 
+fastify.get('/', async (request, reply) => {
+  return { status: 'ok', message: 'API is running!' }
+})
+
 fastify.register(authRoutes)
 fastify.register(phraseRoutes)
 fastify.register(guessRoutes)

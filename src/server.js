@@ -40,10 +40,7 @@ fastify.register(leaderboardRoutes)
 
 const start = async () => {
   try {
-    await fastify.listen({ 
-      port: process.env.PORT || 3000,
-      host: '0.0.0.0'  // Importante para produção
-    })
+    await fastify.listen(process.env.PORT || 3000, '0.0.0.0') // 0.0.0.0 é para permitir conexões externas
     console.log(`🚀 Server is running at ${fastify.server.address().port}`)
   } catch (err) {
     fastify.log.error(err)
@@ -52,3 +49,5 @@ const start = async () => {
 }
 
 start()
+
+

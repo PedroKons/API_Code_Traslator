@@ -14,6 +14,7 @@ COPY . .
 
 RUN npx prisma generate
 
+# Expose port 3000
 EXPOSE 3000
 
 # Add healthcheck
@@ -24,4 +25,5 @@ HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
 RUN apt-get update && apt-get install -y tini
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
+# Start the server
 CMD ["npm", "start"] 

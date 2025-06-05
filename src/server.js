@@ -42,9 +42,11 @@ const start = async () => {
   try {
     await fastify.listen({ 
       port: process.env.PORT || 3000,
-      host: '0.0.0.0'  // 0.0.0.0 é para permitir conexões externas
+      host: '0.0.0.0',  // 0.0.0.0 é para permitir conexões externas
+      listenTextResolver: (address) => {
+        return `🚀 Server is running at ${address}`
+      }
     })
-    console.log(`🚀 Server is running at ${fastify.server.address().port}`)
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
